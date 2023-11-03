@@ -1,4 +1,4 @@
 export interface Quarto {
-  type: string;
+  tipo: string;
   value: number;
 }

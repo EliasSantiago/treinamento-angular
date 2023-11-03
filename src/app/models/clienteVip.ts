@@ -1,8 +1,8 @@
 import { ClienteAbstract } from "./cliente";
 
 export class ClienteVip extends ClienteAbstract {
-  constructor(name: string, type: string) {
-    super(name, type);
+  constructor(nome: string, tipo: string) {
+    super(nome, tipo);
   }
 
   override mensagem(): string {

@@ -11,6 +11,6 @@ export class Reserva {
   }
 
   public detalhesreserva(): string {
-    return `Reserva feita por ${this.cliente.name} para um quarto ${this.quarto.type} por ${this.quantidadeDias} dias.${this.cliente.mensagem()} o valor total ficou: ${this.valortotal()}`
+    return `Reserva feita por ${this.cliente.nome} para um quarto ${this.quarto.tipo} por ${this.quantidadeDias} dias.${this.cliente.mensagem()} o valor total ficou: ${this.valortotal()}`
   }
 }

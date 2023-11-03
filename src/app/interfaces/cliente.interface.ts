@@ -1,6 +1,6 @@
 export interface Cliente {
-  name: string;
-  type: string;
+  nome: string;
+  tipo: string;
 
   mensagem(): string;
 }

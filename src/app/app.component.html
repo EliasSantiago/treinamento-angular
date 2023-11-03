@@ -22,17 +22,25 @@
   </div>
   <button (click)="fazerReserva()" class="btn btn-primary">Fazer reserva</button>
 
-  <div class="mt-4">
+  <div class="mt-4" *ngIf="hotelService.getReservas().length > 0">
     <h2>Lista de Reservas</h2>
     <table class="table table-striped">
       <thead>
         <tr>
-          <th></th>
+          <th>Nome do Cliente</th>
+          <th>Tipo do Cliente</th>
+          <th>Nome de Quarto</th>
+          <th>Quantidade de Dias</th>
+          <th>Valor da Reserva</th>
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td></td>
+        <tr *ngFor="let reserva of hotelService.getReservas()">
+          <td>{{reserva.cliente.nome}}</td>
+          <td>{{reserva.cliente.tipo}}</td>
+          <td>{{reserva.quarto.tipo}}</td>
+          <td>{{reserva.quantidadeDias}}</td>
+          <td>R$ {{reserva.valortotal()}}</td>
         </tr>
       </tbody>
     </table>

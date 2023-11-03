@@ -1,5 +1,5 @@
 import { Quarto } from "../interfaces/quarto.interface";
 
 export abstract class QuartoAbstract implements Quarto {
-  constructor(public type: string, public value: number) {}
+  constructor(public tipo: string, public value: number) {}
 }
